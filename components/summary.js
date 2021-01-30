@@ -16,16 +16,13 @@ const tabs = [
     ),
   },
   {
-    title: "Stack of Choice",
+    title: "Freelancer",
     content: () => (
-      <>
-        <p>I mainly work with these tools.</p>
-        <div className={styles.badges}>
-          <span>React</span>
-          <span>CSS</span>
-          <span>HTML</span>
-        </div>
-      </>
+      <p>
+        Besides my regular jobs, I love to work on private and freelancer
+        projets. It started in 2011 and made it possible to improve my social
+        and technical skills.
+      </p>
     ),
   },
 ];

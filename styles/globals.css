@@ -8,6 +8,22 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #a1c6da;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f3f3f3;
+}
+::-webkit-scrollbar-track {
+  background: mone;
+  border-radius: 10px;
+}
+
 :root {
   --title-color: #f3f3f3;
   --text-color: #8c8c8e;
@@ -22,6 +38,7 @@ body {
   font-family: "Cascadia", Sans-Serif;
 
   color: var(--text-color);
+  fill: var(--title-color);
   background: rgb(40, 47, 50);
   background: linear-gradient(
     115deg,
@@ -58,7 +75,6 @@ h3,
 h4,
 h5 {
   color: var(--title-color);
-  font-weight: normal;
 }
 
 * {

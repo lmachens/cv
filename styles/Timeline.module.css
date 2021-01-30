@@ -1,0 +1,12 @@
+.icon {
+  border-radius: 50%;
+  margin: 1px;
+}
+
+.chrono * {
+  font-weight: normal !important;
+}
+
+.chrono a {
+  color: var(--accent-color);
+}

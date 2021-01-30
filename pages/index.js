@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Summary from "../components/summary";
 import Badge from "../components/badge";
+import Timeline from "../components/timeline";
 
 export default function Home() {
   return (
@@ -10,7 +11,6 @@ export default function Home() {
         <title>Leon Machens</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header}></header>
       <aside className={styles.aside}>
         <header>
           <div className={styles.border}>
@@ -24,7 +24,7 @@ export default function Home() {
           </p>
         </header>
         <main>
-          <ul>
+          <ul className={styles.spaceBetween}>
             <li>
               <h4>Location</h4>
               <span>Cologne, Germany</span>
@@ -94,12 +94,32 @@ export default function Home() {
               <li>🎮 Gaming app with &gt;1000 DAU</li>
               <li>👨‍💻 Never stopped learning</li>
               <li>🤖 +10 years of experience</li>
+              <li>
+                <a href="https://github.com/lmachens/cv" target="_blank">
+                  ❤️ Open Source
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Private</h3>
+            <ul>
+              <li>
+                <a href="https://youtu.be/uVjggcmqMxw?t=1378" target="_blank">
+                  🏆 Vice champion in CNC3
+                </a>
+              </li>
+              <li>🧖‍♂️ Sauna master certificate</li>
+              <li>🏍️ Sold my GSXR 750 in 2020</li>
+              <li>💪 Loves workouts</li>
+              <li>💍 Beatiful wife</li>
             </ul>
           </section>
         </main>
       </aside>
       <main className={styles.main}>
         <Summary />
+        <Timeline />
       </main>
     </div>
   );

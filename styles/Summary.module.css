@@ -59,17 +59,3 @@
 .navButton.active::after {
   opacity: 1;
 }
-
-.badges {
-  margin-top: 1em;
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 0.5em;
-  justify-content: left;
-}
-
-.badges span {
-  border: 1px solid var(--accent-color);
-  border-radius: 10px;
-  padding: 0.2em 0.5em;
-}

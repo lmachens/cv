@@ -1,46 +1,37 @@
 .container {
-  margin: 10px;
-  border: 1px solid #1e1e1f;
-  height: calc(100vh - 20px);
-  width: calc(100vw - 20px);
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas: "aside main header";
-}
-
-.header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  width: 100%;
-  padding: 5% 10%;
-}
-
-.header > * {
-  opacity: 0.2;
-  transition: opacity 1.2s ease;
-}
-
-.header > *:hover {
-  opacity: 1;
 }
 
 .main {
-  grid-area: main;
   padding: 1.5rem;
   display: grid;
-  overflow: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    border: 1px solid #1e1e1f;
+    margin: 10px;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    grid-template-columns: 290px 1fr;
+    overflow: hidden;
+  }
+
+  .main {
+    overflow: auto;
+  }
 }
 
 .aside {
   background: #2a3740;
-  grid-area: aside;
-  width: 290px;
+  min-width: 290px;
   display: grid;
   justify-content: stretch;
   grid-template-rows: auto 1fr;
   text-align: center;
+  overflow: auto;
 }
 
 .border {
@@ -77,8 +68,12 @@
 
 .aside li {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
+}
+
+.spaceBetween li {
+  justify-content: space-between;
 }
 
 .divider {

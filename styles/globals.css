@@ -9,12 +9,14 @@
 }
 
 :root {
-  --text-color: #f3f3f3;
+  --title-color: #f3f3f3;
+  --text-color: #8c8c8e;
   --accent-color: #a1c6da;
 }
 
 html,
 body {
+  font-size: 95%;
   padding: 0;
   margin: 0;
   font-family: "Cascadia", Sans-Serif;
@@ -31,12 +33,32 @@ body {
 
 a {
   color: inherit;
+  fill: inherit;
   text-decoration: none;
+  transition: 0.2s color ease;
+}
+
+a:hover {
+  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 p,
-h1 {
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--title-color);
+  font-weight: normal;
 }
 
 * {

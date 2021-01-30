@@ -1,0 +1,11 @@
+.badge {
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 0.2em 0.5em;
+  transition: 0.2s color ease;
+  background: #192025;
+}
+
+.badge:hover {
+  color: var(--accent-color);
+}

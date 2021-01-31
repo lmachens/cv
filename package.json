@@ -5,13 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "next": "10.0.5",
     "react": "17.0.1",
     "react-chrono": "^1.9.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "serve": "^11.3.2"
   }
 }

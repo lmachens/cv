@@ -67,6 +67,7 @@ function Summary({ className }) {
             className={classNames(styles.navButton, {
               [styles.active]: tabIndex === index,
             })}
+            aria-label={tab.title}
             onClick={() => {
               setTabIndex(index);
               setTitle(tabs[index].title);

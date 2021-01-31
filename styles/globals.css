@@ -1,11 +1,17 @@
 @font-face {
-  font-family: "Cascadia";
-  src: url("/fonts/Cascadia.eot");
-  src: url("/fonts/Cascadia.woff") format("woff"),
-    url("/fonts/Cascadia.ttf") format("truetype"),
-    url("/fonts/Cascadia.svg") format("svg");
+  font-family: "CascadiaCode";
   font-weight: normal;
   font-style: normal;
+  src: local(""), url("/fonts/CascadiaCode.woff2") format("woff2"),
+    url("/fonts/CascadiaCode.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local(""), url("/fonts/OpenSans.woff2") format("woff2"),
+    url("/fonts/OpenSans.ttf") format("truetype");
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +26,7 @@
   background: #f3f3f3;
 }
 ::-webkit-scrollbar-track {
-  background: mone;
+  background: none;
   border-radius: 10px;
 }
 
@@ -28,6 +34,8 @@
   --title-color: #f3f3f3;
   --text-color: #8c8c8e;
   --accent-color: #a1c6da;
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "CascadiaCode", Sans-Serif;
 }
 
 html,
@@ -35,7 +43,7 @@ body {
   font-size: 95%;
   padding: 0;
   margin: 0;
-  font-family: "Cascadia", Sans-Serif;
+  font-family: var(--primary-font);
 
   color: var(--text-color);
   fill: var(--title-color);
@@ -75,6 +83,8 @@ h3,
 h4,
 h5 {
   color: var(--title-color);
+  font-weight: normal;
+  font-family: var(--secondary-font);
 }
 
 * {

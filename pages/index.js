@@ -1,8 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Summary from "../components/summary";
-import Timeline from "../components/timeline";
 import Aside from "../components/aside";
+import dynamic from "next/dynamic";
+
+const Timeline = dynamic(() => import("../components/timeline"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

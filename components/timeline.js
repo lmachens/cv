@@ -1,5 +1,6 @@
 import { Chrono } from "react-chrono";
 import styles from "../styles/Timeline.module.css";
+import { useEffect, useState } from "react";
 
 const items = [
   {
@@ -255,7 +256,30 @@ const educations = [
   },
 ];
 
+const mediaQuery =
+  typeof window !== "undefined"
+    ? window.matchMedia("(min-width: 800px)")
+    : { matches: false };
 function Timeline() {
+  const [mode, setMode] = useState(
+    mediaQuery.matches ? "VERTICAL_ALTERNATING" : "VERTICAL"
+  );
+
+  useEffect(() => {
+    function handleMediaChange(event) {
+      if (event.matches) {
+        setMode("VERTICAL_ALTERNATING");
+      } else {
+        setMode("VERTICAL");
+      }
+    }
+
+    mediaQuery.addListener(handleMediaChange);
+    return () => {
+      mediaQuery.removeListener(handleMediaChange);
+    };
+  }, []);
+
   return (
     <section className={styles.chrono}>
       <h2>Work experience</h2>
@@ -263,7 +287,7 @@ function Timeline() {
         allowDynamicUpdate
         scrollable={false}
         items={items}
-        mode="VERTICAL_ALTERNATING"
+        mode={mode}
         hideControls
         theme={{
           primary: "var(--accent-color)",
@@ -278,7 +302,7 @@ function Timeline() {
         allowDynamicUpdate
         scrollable={false}
         items={educations}
-        mode="VERTICAL_ALTERNATING"
+        mode={mode}
         hideControls
         theme={{
           primary: "var(--accent-color)",

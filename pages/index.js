@@ -111,8 +111,8 @@ export default function Home() {
               </li>
               <li>🧖‍♂️ Sauna master certificate</li>
               <li>🏍️ Sold my GSXR 750 in 2020</li>
-              <li>💪 Loves workouts</li>
-              <li>💍 Beatiful wife</li>
+              <li>💪 Love workouts</li>
+              <li>💍 Married since 2018</li>
             </ul>
           </section>
         </main>

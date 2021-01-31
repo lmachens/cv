@@ -3,6 +3,14 @@
   margin: 1px;
 }
 
+.chrono {
+  text-align: center;
+}
+
+.chrono > div {
+  height: auto;
+}
+
 .chrono * {
   font-weight: normal !important;
 }

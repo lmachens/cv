@@ -96,8 +96,8 @@ const items = [
     ),
     cardDetailedText: (
       <>
-        Homelike is a platform for furnished apartments, simlar to Airbnb. I
-        learned a lot about fast growing startups, fundings and economic driven
+        Homelike is a platform for furnished apartments, similar to Airbnb. I
+        learned a lot about fast growing startups, funding and economic driven
         decisions. It was a great time, especially to improve my MongoDB,
         Meteor.js and React skills. The most challenging task was to create a
         location/map based search algorithm.
@@ -173,7 +173,7 @@ const items = [
         During my studies, I started working for a small company as developer.
         BESgrav is a CAD software for engraving and cutting, but the code base
         was outdated. I worked with Win32 interfaces, Visual Studio, C and C++.
-        The image processing part was very intersting and I am extremly happy
+        The image processing part was very interesting and I am extremely happy
         about the learned knowledge.
       </>
     ),
@@ -214,7 +214,7 @@ const educations = [
       <>
         My master thesis (mark: 1.15) explains the development of an document
         management app based on ELO (Elektronischer Leitz Ordner) for tablet
-        PCs. The studis were time consuming, but there was always time to enjoy
+        PCs. The studies were time consuming, but there was always time to enjoy
         the beer side of life 🍻.
       </>
     ),
@@ -241,7 +241,7 @@ const educations = [
         2005 was the beginning of my informatics career by absolving an
         education called "Technical Assistant for Informatics". My interests in
         computers started long before that date, but I think it doesn't count as
-        experience to write about playing games on an Atary ST 🕹️.
+        experience to write about playing games on an Atari ST 🕹️.
       </>
     ),
   },

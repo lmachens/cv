@@ -48,12 +48,7 @@ body {
   color: var(--text-color);
   fill: var(--title-color);
   background: rgb(40, 47, 50);
-  background: linear-gradient(
-    115deg,
-    rgba(40, 47, 50, 1) 0%,
-    rgba(28, 28, 28, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(115deg, #282f32, #101619 50%, #000);
 }
 
 a {

@@ -46,9 +46,3 @@ jobs:
           allow_empty_commit: true
           # Build directory to deploy
           build_dir: out
-          # The committer name and email address
-          committer: leon@machens.koeln
-          # The author name and email address
-          author: Leon Machens
-          # Commit message
-          commit_message: 🚀 Deploy on GitHub pages

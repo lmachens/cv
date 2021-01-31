@@ -94,3 +94,7 @@ h5 {
 .show-less {
   max-height: 50px !important;
 }
+
+.timeline-item-title {
+  overflow: visible !important;
+}

@@ -6,7 +6,7 @@ function Aside() {
     <aside className={styles.aside}>
       <header>
         <div className={styles.border}>
-          <img className={styles.avatar} src="/me.png" alt="" />
+          <img className={styles.avatar} src="/me.jpg" alt="" />
         </div>
         <h3>Leon Machens</h3>
         <p>
@@ -28,7 +28,11 @@ function Aside() {
           <li>
             <h4>E-Mail</h4>
             <span>
-              <a href="mailto:leon@machens.koeln" target="_blank">
+              <a
+                href="mailto:leon@machens.koeln"
+                target="_blank"
+                rel="noreferrer"
+              >
                 leon@machens.koeln
               </a>
             </span>
@@ -36,7 +40,7 @@ function Aside() {
           <li>
             <h4>Phone</h4>
             <span>
-              <a href="tel:+4917664777468" target="_blank">
+              <a href="tel:+4917664777468" target="_blank" rel="noreferrer">
                 +49 176 64777 468
               </a>
             </span>
@@ -44,7 +48,11 @@ function Aside() {
         </ul>
         <div className={styles.divider} />
         <section className={styles.social}>
-          <a href="https://github.com/lmachens" target="_blank">
+          <a
+            href="https://github.com/lmachens"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               src="/github.svg"
               alt="GitHub"
@@ -56,6 +64,7 @@ function Aside() {
           <a
             href="https://www.xing.com/profile/Leon_Machens/cv"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src="/xing.svg"
@@ -87,7 +96,11 @@ function Aside() {
             <li>👨‍💻 Never stopped learning</li>
             <li>🤖 +10 years of experience</li>
             <li>
-              <a href="https://github.com/lmachens/cv" target="_blank">
+              <a
+                href="https://github.com/lmachens/cv"
+                target="_blank"
+                rel="noreferrer"
+              >
                 ❤️ Open Source
               </a>
             </li>
@@ -97,7 +110,11 @@ function Aside() {
           <h3>Private</h3>
           <ul>
             <li>
-              <a href="https://youtu.be/uVjggcmqMxw?t=1378" target="_blank">
+              <a
+                href="https://youtu.be/uVjggcmqMxw?t=1378"
+                target="_blank"
+                rel="noreferrer"
+              >
                 🏆 Vice champion in CNC3
               </a>
             </li>

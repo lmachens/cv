@@ -6,7 +6,7 @@ const items = [
     title: "2019 - present",
     cardTitle: "Head Coach Web Development",
     cardSubtitle: (
-      <a href="https://neuefische.de" target="_blank">
+      <a href="https://neuefische.de" target="_blank" rel="noreferrer">
         neue fische GmbH
       </a>
     ),
@@ -18,6 +18,7 @@ const items = [
         <a
           href="https://www.neuefische.de/magazin/javascript-lernen-im-team-statt-allein"
           target="_blank"
+          rel="noreferrer"
         >
           This article
         </a>{" "}
@@ -29,7 +30,7 @@ const items = [
     title: "2018 - 2019",
     cardTitle: "Lead Developer",
     cardSubtitle: (
-      <a href="https://grapes.de/" target="_blank">
+      <a href="https://grapes.de/" target="_blank" rel="noreferrer">
         GRAPES Webagency
       </a>
     ),
@@ -47,7 +48,7 @@ const items = [
     title: "2017 - present",
     cardTitle: "Founder",
     cardSubtitle: (
-      <a href="https://th.gl" target="_blank">
+      <a href="https://th.gl" target="_blank" rel="noreferrer">
         Trophy Hunter
       </a>
     ),
@@ -58,6 +59,7 @@ const items = [
         <a
           href="http://www.overwolf.com/contests/lol-challenge-2016/"
           target="_blank"
+          rel="noreferrer"
         >
           Overwolf Apps Developer Challenge 2016
         </a>
@@ -71,7 +73,7 @@ const items = [
     title: "2016 - 2018",
     cardTitle: "Full Stack Developer",
     cardSubtitle: (
-      <a href="https://mobilehead.com/" target="_blank">
+      <a href="https://mobilehead.com/" target="_blank" rel="noreferrer">
         Mobilehead
       </a>
     ),
@@ -90,7 +92,7 @@ const items = [
     title: "2015 - 2016",
     cardTitle: "Full Stack Developer",
     cardSubtitle: (
-      <a href="https://thehomelike.com" target="_blank">
+      <a href="https://thehomelike.com" target="_blank" rel="noreferrer">
         Homelike
       </a>
     ),
@@ -108,7 +110,7 @@ const items = [
     title: "2015",
     cardTitle: "Co-Founder",
     cardSubtitle: (
-      <a href="https://tronos.de/" target="_blank">
+      <a href="https://tronos.de/" target="_blank" rel="noreferrer">
         Tronos
       </a>
     ),
@@ -117,7 +119,12 @@ const items = [
         In 2014 I was working on a mobile app to control a prototype of an
         autonomous and smart sun lounger called Smartlounger. We founded Tronos
         in 2015, but I left a few months later due to disagreements.{" "}
-        <a href="/tronos.jpg" target="_blank">
+        <a
+          href="/tronos.jpg"
+          alt="Tronos presentation"
+          target="_blank"
+          rel="noreferrer"
+        >
           Click here
         </a>{" "}
         for a photo 🤓.
@@ -131,6 +138,7 @@ const items = [
       <a
         href="https://www.mps-solutions.de/produkt/mpscitywerk/"
         target="_blank"
+        rel="noreferrer"
       >
         Citywerk
       </a>
@@ -147,7 +155,7 @@ const items = [
     title: "2013",
     cardTitle: "C# Developer",
     cardSubtitle: (
-      <a href="http://www.sievers-group.com/" target="_blank">
+      <a href="http://www.sievers-group.com/" target="_blank" rel="noreferrer">
         Sievers SNC
       </a>
     ),
@@ -164,7 +172,7 @@ const items = [
     title: "2011 - 2013",
     cardTitle: "C/C++ Developer",
     cardSubtitle: (
-      <a href="https://besgrav.de/" target="_blank">
+      <a href="https://besgrav.de/" target="_blank" rel="noreferrer">
         BES GmbH
       </a>
     ),

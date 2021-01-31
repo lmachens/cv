@@ -85,3 +85,12 @@ h5 {
 * {
   box-sizing: border-box;
 }
+
+/* Sadly it's not that easy to change react-chrono styles. I'm sorry for !important */
+.card-description {
+  max-height: none !important;
+}
+
+.show-less {
+  max-height: 50px !important;
+}

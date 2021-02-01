@@ -82,9 +82,9 @@ function Aside() {
             <Badge>React</Badge>
             <Badge>CSS</Badge>
             <Badge>TypeScript</Badge>
-            <Badge>ES2021</Badge>
+            <Badge>Node.js</Badge>
+            <Badge>MongoDB</Badge>
             <Badge>Docker</Badge>
-            <Badge>VSCode</Badge>
           </div>
         </section>
         <div className={styles.divider} />

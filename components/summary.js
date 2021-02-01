@@ -20,8 +20,8 @@ const tabs = [
     content: () => (
       <p>
         Besides my regular jobs, I love to work on private and freelancer
-        projets. I started freelancing in 2011 and improved my technical and
-        social skills since.
+        projects. I started freelancing in 2011 and have improved my technical
+        and social skills since.
       </p>
     ),
   },

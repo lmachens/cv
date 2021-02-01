@@ -84,8 +84,8 @@ const items = [
         modules and infrastructure. In addition to the web technologies like
         React and MongoDB, I was responsible for Docker based load balancer,
         MongoDB replication sets and zero downtime. We moved from Azure to self
-        hosted solutions. I really enjoyed working remote with an international
-        developer team.
+        hosted solutions. I really enjoyed working remotely with an
+        international developer team.
       </>
     ),
   },
@@ -247,10 +247,11 @@ const educations = [
     cardSubtitle: "BBS Ammerland",
     cardDetailedText: (
       <>
-        2005 was the beginning of my informatics career by absolving an
-        education called "Technical Assistant for Informatics". My interests in
-        computers started long before that date, but I think it doesn't count as
-        experience to write about playing games on an Atari ST 🕹️.
+        2005 was the beginning of my computer science career by absolving an
+        education called "Technical Assistant for computer science". My
+        interests in computers started long before that date, but I think it
+        doesn't count as experience to write about playing games on an Atari ST
+        🕹️.
       </>
     ),
   },

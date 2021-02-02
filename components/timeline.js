@@ -247,11 +247,11 @@ const educations = [
     cardSubtitle: "BBS Ammerland",
     cardDetailedText: (
       <>
-        2005 was the beginning of my computer science career by absolving an
-        education called "Technical Assistant for computer science". My
-        interests in computers started long before that date, but I think it
-        doesn't count as experience to write about playing games on an Atari ST
-        🕹️.
+        2005 was the beginning of my computer science career by having
+        successfully completed an education called "Technical Assistant for
+        computer science". My interests in computers started long before that
+        date, but I think it doesn't count as experience to write about playing
+        games on an Atari ST 🕹️.
       </>
     ),
   },

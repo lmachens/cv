@@ -12,6 +12,7 @@
   font-weight: normal;
   src: local(""), url("/fonts/OpenSans.woff2") format("woff2"),
     url("/fonts/OpenSans.ttf") format("truetype");
+  font-display: swap;
 }
 
 ::-webkit-scrollbar {

@@ -119,16 +119,16 @@ const items = [
       <>
         In 2014 I was working on a mobile app to control a prototype of an
         autonomous and smart sun lounger called Smartlounger. We founded Tronos
-        in 2015, but I left a few months later due to disagreements.{" "}
+        in 2015, but I left a few months later due to disagreements. Here is a{" "}
         <a
           href="/tronos.jpg"
           alt="Tronos presentation"
           target="_blank"
           rel="noreferrer"
         >
-          Click here
+          photo of a Tronos presentation
         </a>{" "}
-        for a photo 🤓.
+        🤓.
       </>
     ),
   },

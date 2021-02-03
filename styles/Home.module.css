@@ -9,7 +9,7 @@
   display: grid;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 680px) {
   .container {
     border: 1px solid #1e1e1f;
     margin: 10px;

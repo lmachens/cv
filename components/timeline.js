@@ -1,17 +1,17 @@
-import { Chrono } from "react-chrono";
+import Chrono from "./chrono";
 import styles from "../styles/Timeline.module.css";
 import { useEffect, useState } from "react";
 
 const items = [
   {
-    title: "2019 - present",
-    cardTitle: "Head Coach Web Development",
-    cardSubtitle: (
+    range: "2019 - present",
+    title: "Head Coach Web Development",
+    subtitle: (
       <a href="https://neuefische.de" target="_blank" rel="noreferrer">
         neue fische GmbH
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         My current job (which I love ❤) is to teach and coach Web Developers in
         a three months bootcamp. Besides the coaching, I am creating job
@@ -28,14 +28,14 @@ const items = [
     ),
   },
   {
-    title: "2018 - 2019",
-    cardTitle: "Lead Developer",
-    cardSubtitle: (
+    range: "2018 - 2019",
+    title: "Lead Developer",
+    subtitle: (
       <a href="https://grapes.de/" target="_blank" rel="noreferrer">
         GRAPES Webagency
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         I worked as a Lead Developer on several projects for Oerlikon, DEVK and
         Klugo. Among other things, I introduced and coordinated internal code
@@ -46,14 +46,14 @@ const items = [
     ),
   },
   {
-    title: "2017 - present",
-    cardTitle: "Founder",
-    cardSubtitle: (
+    range: "2017 - present",
+    title: "Founder",
+    subtitle: (
       <a href="https://th.gl" target="_blank" rel="noreferrer">
         Trophy Hunter
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         This is my biggest project, an app for League of Legends based on
         MongoDB, Next.js and React. With Trophy Hunter, I won the{" "}
@@ -71,14 +71,14 @@ const items = [
     ),
   },
   {
-    title: "2016 - 2018",
-    cardTitle: "Full Stack Developer",
-    cardSubtitle: (
+    range: "2016 - 2018",
+    title: "Full Stack Developer",
+    subtitle: (
       <a href="https://mobilehead.com/" target="_blank" rel="noreferrer">
         Mobilehead
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         As the first hired developer, I was responsible for most of the core
         modules and infrastructure. In addition to the web technologies like
@@ -90,14 +90,14 @@ const items = [
     ),
   },
   {
-    title: "2015 - 2016",
-    cardTitle: "Full Stack Developer",
-    cardSubtitle: (
+    range: "2015 - 2016",
+    title: "Full Stack Developer",
+    subtitle: (
       <a href="https://thehomelike.com" target="_blank" rel="noreferrer">
         Homelike
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         Homelike is a platform for furnished apartments, similar to Airbnb. I
         learned a lot about fast growing startups, funding and economic driven
@@ -108,14 +108,14 @@ const items = [
     ),
   },
   {
-    title: "2015",
-    cardTitle: "Co-Founder",
-    cardSubtitle: (
+    range: "2015",
+    title: "Co-Founder",
+    subtitle: (
       <a href="https://tronos.de/" target="_blank" rel="noreferrer">
         Tronos
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         In 2014 I was working on a mobile app to control a prototype of an
         autonomous and smart sun lounger called Smartlounger. We founded Tronos
@@ -133,9 +133,9 @@ const items = [
     ),
   },
   {
-    title: "2014 - 2015",
-    cardTitle: "PHP Developer",
-    cardSubtitle: (
+    range: "2014 - 2015",
+    title: "PHP Developer",
+    subtitle: (
       <a
         href="https://www.mps-solutions.de/produkt/mpscitywerk/"
         target="_blank"
@@ -144,7 +144,7 @@ const items = [
         Citywerk
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         After my studies, I started working as a PHP Developer. One big task was
         to migrate from PHP 5.3 to 5.4. If you know Register Globals in PHP, you
@@ -153,14 +153,14 @@ const items = [
     ),
   },
   {
-    title: "2013",
-    cardTitle: "C# Developer",
-    cardSubtitle: (
+    range: "2013",
+    title: "C# Developer",
+    subtitle: (
       <a href="http://www.sievers-group.com/" target="_blank" rel="noreferrer">
         Sievers SNC
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         As a master's degree candidate, I was working with C# and XAML to
         develop a Windows Store App (Windows 8.1). What is a Windows Store App
@@ -170,14 +170,14 @@ const items = [
   },
 
   {
-    title: "2011 - 2013",
-    cardTitle: "C/C++ Developer",
-    cardSubtitle: (
+    range: "2011 - 2013",
+    title: "C/C++ Developer",
+    subtitle: (
       <a href="https://besgrav.de/" target="_blank" rel="noreferrer">
         BES GmbH
       </a>
     ),
-    cardDetailedText: (
+    text: (
       <>
         During my studies, I started working for a small company as developer.
         BESgrav is a CAD software for engraving and cutting, but the code base
@@ -188,10 +188,10 @@ const items = [
     ),
   },
   {
-    title: "2010",
-    cardTitle: "Android Developer",
-    cardSubtitle: "Japan Communication",
-    cardDetailedText: (
+    range: "2010",
+    title: "Android Developer",
+    subtitle: "Japan Communication",
+    text: (
       <>
         I was working abroad in Tokyo for one month and developed an Android app
         for local subway schedules. This was my first project in Java, but more
@@ -204,10 +204,10 @@ const items = [
 
 const educations = [
   {
-    title: "2015",
-    cardTitle: "Trainer",
-    cardSubtitle: "IHK Osnabrück",
-    cardDetailedText: (
+    range: "2015",
+    title: "Trainer",
+    subtitle: "IHK Osnabrück",
+    text: (
       <>
         I always had the motivation to keep learning and share my knowledge with
         others. After work, I learned for IHK license (Ausbilderschein) to
@@ -216,10 +216,10 @@ const educations = [
     ),
   },
   {
-    title: "2012 - 2014",
-    cardTitle: "Master of Science in Informatics",
-    cardSubtitle: "Hochschule Osnabrück",
-    cardDetailedText: (
+    range: "2012 - 2014",
+    title: "Master of Science in Informatics",
+    subtitle: "Hochschule Osnabrück",
+    text: (
       <>
         My master thesis (mark: 1.15) explains the development of an document
         management app based on ELO (Elektronischer Leitz Ordner) for tablet
@@ -229,10 +229,10 @@ const educations = [
     ),
   },
   {
-    title: "2008 - 2012",
-    cardTitle: "Bachelor of Science in Technical Informatics",
-    cardSubtitle: "Hochschule Osnabrück",
-    cardDetailedText: (
+    range: "2008 - 2012",
+    title: "Bachelor of Science in Technical Informatics",
+    subtitle: "Hochschule Osnabrück",
+    text: (
       <>
         I wrote my bachelor thesis (mark: 1.7) about visual marker detection and
         spent one semester in Japan. This time was very impressive and gives me
@@ -242,10 +242,10 @@ const educations = [
     ),
   },
   {
-    title: "2005 - 2007",
-    cardTitle: "Vocational education",
-    cardSubtitle: "BBS Ammerland",
-    cardDetailedText: (
+    range: "2005 - 2007",
+    title: "Vocational education",
+    subtitle: "BBS Ammerland",
+    text: (
       <>
         2005 was the beginning of my computer science career by having
         successfully completed an education called "Technical Assistant for
@@ -284,35 +284,9 @@ function Timeline() {
   return (
     <section className={styles.chrono}>
       <h2>Work experience</h2>
-      <Chrono
-        allowDynamicUpdate
-        scrollable={false}
-        items={items}
-        mode={mode}
-        hideControls
-        theme={{
-          primary: "var(--accent-color)",
-          secondary: "#1d252b",
-          textColor: "var(--text-color)",
-          cardBgColor: "#2a3740",
-          cardForeColor: "var(--title-color)",
-        }}
-      />
+      <Chrono items={items} />
       <h2>Education</h2>
-      <Chrono
-        allowDynamicUpdate
-        scrollable={false}
-        items={educations}
-        mode={mode}
-        hideControls
-        theme={{
-          primary: "var(--accent-color)",
-          secondary: "#1d252b",
-          textColor: "var(--text-color)",
-          cardBgColor: "#2a3740",
-          cardForeColor: "var(--title-color)",
-        }}
-      />
+      <Chrono items={educations} />
     </section>
   );
 }

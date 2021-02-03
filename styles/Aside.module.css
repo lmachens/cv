@@ -1,5 +1,5 @@
 .aside {
-  background: #2a3740;
+  background: var(--primary-background-color);
   min-width: 290px;
   display: grid;
   justify-content: stretch;
@@ -29,7 +29,7 @@
 }
 
 .aside main {
-  background: #1d252b;
+  background: var(--secondary-background-color);
   overflow: auto;
   padding: 1rem;
 }

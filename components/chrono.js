@@ -10,7 +10,7 @@ function chrono({ items }) {
           <article className={styles.chrono__card}>
             <header>
               <h4>{item.title}</h4>
-              <h5>{item.subtitle}</h5>
+              <p>{item.subtitle}</p>
             </header>
             <main>{item.text}</main>
           </article>

@@ -6,7 +6,13 @@ function Aside() {
     <aside className={styles.aside}>
       <header>
         <div className={styles.border}>
-          <img className={styles.avatar} src="/me.jpg" alt="" />
+          <img
+            className={styles.avatar}
+            src="/me.jpg"
+            alt=""
+            width="100"
+            height="100"
+          />
         </div>
         <h3>Leon Machens</h3>
         <p>

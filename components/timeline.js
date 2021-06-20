@@ -4,6 +4,22 @@ import { useEffect, useState } from "react";
 
 const items = [
   {
+    range: "2021",
+    title: "Coach",
+    subtitle: (
+      <a href="https://machens.dev/" target="_blank" rel="noreferrer">
+        Gaming App LVL
+      </a>
+    ),
+    text: (
+      <>
+        I proudly announce my first coding course for Web Developer, who like to
+        reach the next level in developing Apps for PC Gamers. The course starts
+        19th of July.
+      </>
+    ),
+  },
+  {
     range: "2019 - present",
     title: "Head Coach Web Development",
     subtitle: (

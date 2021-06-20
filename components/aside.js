@@ -58,6 +58,7 @@ function Aside() {
             href="https://github.com/lmachens"
             target="_blank"
             rel="noreferrer"
+            title="GitHub"
           >
             <img
               src="/github.svg"
@@ -68,9 +69,38 @@ function Aside() {
             />
           </a>
           <a
+            href="https://profile.codersrank.io/user/lmachens"
+            target="_blank"
+            rel="noreferrer"
+            title="CodersRank"
+          >
+            <img
+              src="/codersrank.svg"
+              alt="CodersRank"
+              width="24"
+              height="24"
+              className={styles.flip}
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/leon-machens-b55822182"
+            target="_blank"
+            rel="noreferrer"
+            title="Linkedin"
+          >
+            <img
+              src="/linkedin.svg"
+              alt="Linkedin"
+              width="24"
+              height="24"
+              className={styles.flip}
+            />
+          </a>
+          <a
             href="https://www.xing.com/profile/Leon_Machens/cv"
             target="_blank"
             rel="noreferrer"
+            title="Xing"
           >
             <img
               src="/xing.svg"

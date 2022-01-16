@@ -1,6 +1,5 @@
 import Chrono from "./chrono";
 import styles from "../styles/Timeline.module.css";
-import { useEffect, useState } from "react";
 
 const items = [
   {
@@ -80,8 +79,8 @@ const items = [
         >
           Overwolf Apps Developer Challenge 2016
         </a>
-        . To improve the app, I am working with a company from Tel'Aviv. The
-        collaboration allows me to get in touch with developers and people
+        . To improve the app, I am working with a company from Tel&apos;Aviv.
+        The collaboration allows me to get in touch with developers and people
         outside of Germany.
       </>
     ),
@@ -178,9 +177,9 @@ const items = [
     ),
     text: (
       <>
-        As a master's degree candidate, I was working with C# and XAML to
+        As a master&apos;s degree candidate, I was working with C# and XAML to
         develop a Windows Store App (Windows 8.1). What is a Windows Store App
-        you might ask? Luckily you don't need to know anymore 😵.
+        you might ask? Luckily you don&apos;t need to know anymore 😵.
       </>
     ),
   },
@@ -264,39 +263,16 @@ const educations = [
     text: (
       <>
         2005 was the beginning of my computer science career by having
-        successfully completed an education called "Technical Assistant for
-        computer science". My interests in computers started long before that
-        date, but I think it doesn't count as experience to write about playing
-        games on an Atari ST 🕹️.
+        successfully completed an education called &quot;Technical Assistant for
+        computer science&quot;. My interests in computers started long before
+        that date, but I think it doesn&apos;t count as experience to write
+        about playing games on an Atari ST 🕹️.
       </>
     ),
   },
 ];
 
-const mediaQuery =
-  typeof window !== "undefined"
-    ? window.matchMedia("(min-width: 800px)")
-    : { matches: false };
 function Timeline() {
-  const [mode, setMode] = useState(
-    mediaQuery.matches ? "VERTICAL_ALTERNATING" : "VERTICAL"
-  );
-
-  useEffect(() => {
-    function handleMediaChange(event) {
-      if (event.matches) {
-        setMode("VERTICAL_ALTERNATING");
-      } else {
-        setMode("VERTICAL");
-      }
-    }
-
-    mediaQuery.addListener(handleMediaChange);
-    return () => {
-      mediaQuery.removeListener(handleMediaChange);
-    };
-  }, []);
-
   return (
     <section className={styles.chrono}>
       <h2>Work experience</h2>

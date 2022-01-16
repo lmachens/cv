@@ -11,7 +11,8 @@
 .border {
   border: 4px solid #1e1e1f;
   border-radius: 50%;
-  width: fit-content;
+  display: flex;
+  padding: 4px;
 }
 
 .avatar {

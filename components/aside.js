@@ -1,12 +1,13 @@
 import Badge from "../components/badge";
 import styles from "../styles/Aside.module.css";
+import Image from "next/image";
 
 function Aside() {
   return (
     <aside className={styles.aside}>
       <header>
         <div className={styles.border}>
-          <img
+          <Image
             className={styles.avatar}
             src="/me.jpg"
             alt=""

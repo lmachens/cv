@@ -41,7 +41,7 @@ function Summary({ className }) {
     } else {
       setContent(tab.content);
     }
-  }, [fullTitleVisible]);
+  }, [fullTitleVisible, tab.content]);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -49,12 +49,12 @@ function Summary({ className }) {
       const tab = tabs[newTabIndex];
       setTabIndex(newTabIndex);
       setTitle(tab.title);
-    }, 15000);
+    }, 10000);
 
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [tabIndex]);
+  }, [tabIndex, setTitle]);
 
   return (
     <section className={classNames(styles.container, className)}>

@@ -25,11 +25,8 @@ function useWritingState(initialValue) {
     };
   }, [value, nextValue, end]);
 
-  function updateValue(newValue) {
-    setNextValue(newValue);
-  }
   const partialValue = value.substring(0, end);
-  return [partialValue, updateValue];
+  return [partialValue, setNextValue];
 }
 
 export default useWritingState;

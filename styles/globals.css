@@ -59,11 +59,24 @@ a {
   fill: inherit;
   text-decoration: none;
   transition: 0.2s color ease;
+  animation: 8s ease-in-out infinite both blink;
 }
 
 a:hover {
   fill: var(--accent-color);
   color: var(--accent-color);
+  animation: none;
+}
+
+@keyframes blink {
+  from,
+  70% {
+    color: inherit;
+  }
+
+  to {
+    color: var(--accent-color);
+  }
 }
 
 p,

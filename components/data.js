@@ -1,10 +1,73 @@
 export const experience = [
   {
+    range: "2022 - present",
+    title: "Lead Frontend Web Developer",
+    subtitle: (
+      <a href="https://playt.net/" target="_blank" rel="noreferrer">
+        PLAYT.net
+      </a>
+    ),
+    text: (
+      <>
+        I am very excited to work on a new project in the gaming industry 🤩 and
+        be responsible for the frontend development. It&apos;s really nice to
+        start from scratch with modern development environments like Next.js, to
+        build something together with a strong and motivated team.
+      </>
+    ),
+  },
+  {
     range: "2021",
-    title: "Coach",
+    title: "App development",
+    subtitle: (
+      <a
+        href="https://github.com/lmachens/skeleton"
+        target="_blank"
+        rel="noreferrer"
+      >
+        💀 Skeleton 💀
+      </a>
+    ),
+    text: (
+      <>
+        I needed a tool to display websites as frameless and transparent overlay
+        while playing games. There are popular solutions, but not a single one
+        which fits all my requirements. Thus, I started developing Skeleton,
+        another Open Source project!
+      </>
+    ),
+  },
+  {
+    range: "2022",
+    title: "App development",
+    subtitle: (
+      <a href="https://aeternum-map.gg/" target="_blank" rel="noreferrer">
+        Aeternum Map 📌
+      </a>
+    ),
+    text: (
+      <>
+        I was excited to develop something for New World, an MMORPG game
+        developed by Amazon Game Studios. The result is Aeternum Map, an
+        interactive map with live-tracking, routes and much more. This is my
+        most popular Open Source project so far (see{" "}
+        <a
+          href="https://github.com/lmachens/aeternum-map"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        ).
+      </>
+    ),
+  },
+  {
+    range: "2021",
+    title: "App development",
     subtitle: (
       <a href="https://machens.dev/" target="_blank" rel="noreferrer">
-        Gaming App LVL
+        Gaming App LVL 🎮
       </a>
     ),
     text: (
@@ -16,7 +79,7 @@ export const experience = [
     ),
   },
   {
-    range: "2019 - present",
+    range: "2019 - 2021",
     title: "Head Coach Web Development",
     subtitle: (
       <a href="https://neuefische.de" target="_blank" rel="noreferrer">
@@ -25,9 +88,9 @@ export const experience = [
     ),
     text: (
       <>
-        My current job (which I love ❤) is to teach and coach Web Developers in
-        a three months bootcamp. Besides the coaching, I am creating job
-        teaching apps, extending the curriculum and speaking with applicants.{" "}
+        My current job was to teach and coach Web Developers in a three months
+        bootcamp. Besides the coaching, I am creating job teaching apps,
+        extending the curriculum and speaking with applicants.{" "}
         <a
           href="https://www.neuefische.de/magazin/javascript-lernen-im-team-statt-allein"
           target="_blank"
@@ -35,7 +98,9 @@ export const experience = [
         >
           This article
         </a>{" "}
-        provides more information.
+        provides more information. In this time, I was so happy ❤ to work with
+        many motivated people, but sadly, the company goals and quality changed
+        over the years.
       </>
     ),
   },

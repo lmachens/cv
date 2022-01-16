@@ -128,8 +128,8 @@ function Aside() {
         <section>
           <h3>Highlights</h3>
           <ul>
-            <li>👨‍🏫 Coached &gt;70 web developers</li>
-            <li>🎮 Gaming app with &gt;1000 DAU</li>
+            <li>👨‍🏫 Coached &gt;100 web developers</li>
+            <li>🎮 Gaming app with &gt;4000 DAU</li>
             <li>👨‍💻 Never stopped learning</li>
             <li>🤖 +10 years of experience</li>
             <li>

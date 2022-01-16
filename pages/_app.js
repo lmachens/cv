@@ -1,14 +1,8 @@
 import "../styles/globals.css";
-import Plausible from "plausible-tracker";
+import { initPlausible } from "../utils/stats";
 
 if (typeof window !== "undefined") {
-  const plausible = Plausible({
-    domain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN,
-    apiHost: process.env.NEXT_PUBLIC_PLAUSIBLE_API_HOST,
-    trackLocalhost: true,
-  });
-  plausible.enableAutoPageviews();
-  plausible.enableAutoOutboundTracking();
+  initPlausible();
 }
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

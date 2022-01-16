@@ -18,7 +18,7 @@ export const experience = [
   },
   {
     range: "2021",
-    title: "App development",
+    title: "Electron development",
     subtitle: (
       <a
         href="https://github.com/lmachens/skeleton"
@@ -64,7 +64,7 @@ export const experience = [
   },
   {
     range: "2021",
-    title: "App development",
+    title: "App development coaching",
     subtitle: (
       <a href="https://machens.dev/" target="_blank" rel="noreferrer">
         Gaming App LVL 🎮
@@ -149,7 +149,7 @@ export const experience = [
   },
   {
     range: "2016 - 2018",
-    title: "Full Stack Developer",
+    title: "Lead Full Stack Developer",
     subtitle: (
       <a href="https://mobilehead.com/" target="_blank" rel="noreferrer">
         Mobilehead

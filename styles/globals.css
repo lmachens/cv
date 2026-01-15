@@ -1,108 +1,186 @@
-@font-face {
-  font-family: "CascadiaCode";
-  font-weight: normal;
-  font-style: normal;
-  src: local(""), url("/fonts/CascadiaCode.woff2") format("woff2"),
-    url("/fonts/CascadiaCode.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  src: local(""), url("/fonts/OpenSans.woff2") format("woff2"),
-    url("/fonts/OpenSans.ttf") format("truetype");
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 ::-webkit-scrollbar {
   width: 6px;
-  height: 10px;
+  height: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #a1c6da;
+  background: var(--accent-color);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #f3f3f3;
+  background: var(--accent-glow);
 }
+
 ::-webkit-scrollbar-track {
-  background: none;
+  background: var(--surface-dark);
   border-radius: 10px;
 }
 
 :root {
-  --title-color: #f3f3f3;
-  --text-color: #b6b6b6;
-  --accent-color: #a1c6da;
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "CascadiaCode", Sans-Serif;
-  --primary-background-color: #2a3740;
-  --secondary-background-color: #1d252b;
+  /* Core palette */
+  --bg-deep: #0a0e12;
+  --bg-base: #0f1419;
+  --surface-dark: #151c24;
+  --surface-mid: #1c252f;
+  --surface-light: #242f3b;
+
+  /* Text hierarchy */
+  --text-primary: #e8edf2;
+  --text-secondary: #8a99a8;
+  --text-muted: #5a6a7a;
+
+  /* Accent - luminous cyan */
+  --accent-color: #4fd1c5;
+  --accent-glow: #5ee9db;
+  --accent-muted: rgba(79, 209, 197, 0.15);
+  --accent-subtle: rgba(79, 209, 197, 0.08);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows & effects */
+  --glow-sm: 0 0 10px rgba(79, 209, 197, 0.2);
+  --glow-md: 0 0 20px rgba(79, 209, 197, 0.15), 0 0 40px rgba(79, 209, 197, 0.1);
+  --glow-lg: 0 0 30px rgba(79, 209, 197, 0.2), 0 0 60px rgba(79, 209, 197, 0.1);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 html,
 body {
-  font-size: 95%;
   padding: 0;
   margin: 0;
-  font-family: var(--primary-font);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  background: var(--bg-deep);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  color: var(--text-color);
-  fill: var(--title-color);
-  background: rgb(40, 47, 50);
-  background: linear-gradient(115deg, #282f32, #101619 50%, #000);
+/* Prevent double scrollbars on desktop */
+@media (min-width: 720px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+/* Subtle noise texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Background gradient mesh */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(79, 209, 197, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(79, 209, 197, 0.03) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 60% at 60% 80%, rgba(79, 209, 197, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 a {
-  color: inherit;
-  fill: inherit;
+  color: var(--accent-color);
   text-decoration: none;
-  transition: 0.2s color ease;
-  animation: 8s ease-in-out infinite both blink;
+  transition: color 0.2s var(--ease-out-quart), text-shadow 0.2s var(--ease-out-quart);
 }
 
 a:hover {
-  fill: var(--accent-color);
-  color: var(--accent-color);
-  animation: none;
+  color: var(--accent-glow);
+  text-shadow: var(--glow-sm);
 }
 
-@keyframes blink {
-  from,
-  70% {
-    color: inherit;
-  }
-
-  to {
-    color: var(--accent-color);
-  }
+p {
+  margin: 0.75em 0;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0.5em 0;
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--title-color);
-  font-weight: normal;
-  font-family: var(--secondary-font);
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; font-weight: 500; }
+h4 { font-size: 0.875rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
 
 * {
   box-sizing: border-box;
 }
 
-/* Sadly it's not that easy to change react-chrono styles. I'm sorry for !important */
+::selection {
+  background: var(--accent-color);
+  color: var(--bg-deep);
+}
+
+/* Utility animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Override react-chrono styles */
 .card-description {
   max-height: none !important;
 }

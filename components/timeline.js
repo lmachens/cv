@@ -4,12 +4,20 @@ import { experience, educations } from "./data";
 
 function Timeline() {
   return (
-    <section className={styles.chrono}>
-      <h2>Work experience</h2>
-      <Chrono items={experience} />
-      <h2>Education</h2>
-      <Chrono items={educations} />
-    </section>
+    <>
+      <section className={styles.section}>
+        <div className={styles.sectionHeader}>
+          <h2>Work Experience</h2>
+        </div>
+        <Chrono items={experience} />
+      </section>
+      <section className={styles.section}>
+        <div className={styles.sectionHeader}>
+          <h2>Education</h2>
+        </div>
+        <Chrono items={educations} />
+      </section>
+    </>
   );
 }
 

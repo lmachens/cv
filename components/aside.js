@@ -116,7 +116,8 @@ function Aside() {
             <Badge>CSS</Badge>
             <Badge>TypeScript</Badge>
             <Badge>Node.js</Badge>
-            <Badge>MongoDB</Badge>
+            <Badge>Bun</Badge>
+            <Badge>C++</Badge>
             <Badge>Docker</Badge>
           </div>
         </section>
@@ -135,6 +136,20 @@ function Aside() {
                 rel="noreferrer"
               >
                 ❤️ Open Source
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Side Projects</h3>
+          <ul>
+            <li>
+              <a
+                href="https://windkraft-nottuln.de/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                🌬️ Windkraft Nottuln
               </a>
             </li>
           </ul>

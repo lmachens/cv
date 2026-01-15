@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <meta
           name="description"
-          content="Computer enthusiast with a strong will to try out new things. My passion is to share my knowledge with like-minded spirits."
+          content="Solo developer from Nottuln, Germany. I build The Hidden Gaming Lair — gaming companion tools used by thousands of players daily."
         />
         <meta name="keywords" content="Leon Machens, Developer, Coach, CV" />
         <title>Leon Machens</title>

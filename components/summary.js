@@ -16,12 +16,12 @@ const tabs = [
     ),
   },
   {
-    title: "Freelancer",
+    title: "Founder",
     content: () => (
       <p>
-        Besides my regular jobs, I love to work on private and freelance
-        projects. I started freelancing in 2011 and have improved my technical
-        and social skills since.
+        I build and maintain The Hidden Gaming Lair full-time — a platform
+        providing interactive maps and companion tools for 20+ games. What
+        started as a side project has grown into my main focus.
       </p>
     ),
   },

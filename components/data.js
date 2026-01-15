@@ -1,6 +1,39 @@
 export const experience = [
   {
-    range: "2022 - present",
+    range: "2023 - present",
+    title: "Founder",
+    subtitle: (
+      <a href="https://www.th.gl" target="_blank" rel="noreferrer">
+        The Hidden Gaming Lair
+      </a>
+    ),
+    text: (
+      <>
+        After leaving PLAYT, I went fully self-employed to focus on my own
+        platform. The Hidden Gaming Lair provides interactive maps, in-game
+        overlays, and real-time position tracking for 20+ games, serving
+        thousands of players daily.
+      </>
+    ),
+  },
+  {
+    range: "Jul 2022 - Dec 2022",
+    title: "CTO",
+    subtitle: (
+      <a href="https://playt.net/" target="_blank" rel="noreferrer">
+        PLAYT.net
+      </a>
+    ),
+    text: (
+      <>
+        After proving myself as Lead Frontend Developer, I was promoted to CTO
+        and took on broader technical leadership responsibilities for the
+        company.
+      </>
+    ),
+  },
+  {
+    range: "Jan 2022 - Jul 2022",
     title: "Lead Frontend Web Developer",
     subtitle: (
       <a href="https://playt.net/" target="_blank" rel="noreferrer">
@@ -9,8 +42,8 @@ export const experience = [
     ),
     text: (
       <>
-        I am very excited to work on a new project in the gaming industry 🤩 and
-        be responsible for the frontend development. It&apos;s really nice to
+        I was excited to work on a new project in the gaming industry 🤩 and
+        be responsible for the frontend development. It was great to
         start from scratch with modern development environments like Next.js, to
         build something together with a strong and motivated team.
       </>
@@ -41,7 +74,7 @@ export const experience = [
     range: "2022",
     title: "App development",
     subtitle: (
-      <a href="https://aeternum-map.gg/" target="_blank" rel="noreferrer">
+      <a href="https://aeternum-map.th.gl" target="_blank" rel="noreferrer">
         Aeternum Map 📌
       </a>
     ),
@@ -123,7 +156,7 @@ export const experience = [
     ),
   },
   {
-    range: "2017 - present",
+    range: "2017 - 2022",
     title: "Founder",
     subtitle: (
       <a href="https://th.gl" target="_blank" rel="noreferrer">
@@ -132,7 +165,7 @@ export const experience = [
     ),
     text: (
       <>
-        This is my biggest project, an app for League of Legends based on
+        This was my biggest project, an app for League of Legends based on
         MongoDB, Next.js and React. With Trophy Hunter, I won the{" "}
         <a
           href="http://www.overwolf.com/contests/lol-challenge-2016/"
@@ -141,9 +174,8 @@ export const experience = [
         >
           Overwolf Apps Developer Challenge 2016
         </a>
-        . To improve the app, I am working with a company from Tel&apos;Aviv.
-        The collaboration allows me to get in touch with developers and people
-        outside of Germany.
+        . This project evolved into The Hidden Gaming Lair, my platform for
+        gaming apps.
       </>
     ),
   },

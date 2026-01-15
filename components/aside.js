@@ -16,17 +16,13 @@ function Aside() {
           />
         </div>
         <h3>Leon Machens</h3>
-        <p>
-          Full Stack Developer
-          <br />
-          Coach/Trainer
-        </p>
+        <p>Solo Developer</p>
       </header>
       <main>
         <ul className={styles.spaceBetween}>
           <li>
             <h4>Location</h4>
-            <span>Cologne, Germany</span>
+            <span>Nottuln, Germany</span>
           </li>
           <li>
             <h4>Year of birth</h4>
@@ -36,19 +32,19 @@ function Aside() {
             <h4>E-Mail</h4>
             <span>
               <a
-                href="mailto:leon@machens.koeln"
+                href="mailto:leon@th.gl"
                 target="_blank"
                 rel="noreferrer"
               >
-                leon@machens.koeln
+                leon@th.gl
               </a>
             </span>
           </li>
           <li>
-            <h4>Phone</h4>
+            <h4>Discord</h4>
             <span>
-              <a href="tel:+4917664777468" target="_blank" rel="noreferrer">
-                +49 176 64777 468
+              <a href="https://th.gl/discord" target="_blank" rel="noreferrer">
+                th.gl/discord
               </a>
             </span>
           </li>

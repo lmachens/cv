@@ -1,23 +1,29 @@
 # Online CV
 
-This is my CV bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Personal portfolio website built with Next.js and React. Features animated typing effects, timeline-based experience display, and Plausible analytics.
 
 ## Develop
 
-First, install dependencies:
-
 ```bash
 npm install
-```
-
-Good job 🎉, now run the development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view.
+
+## Build
+
+```bash
+npm run build
+npm start
+```
+
+## Docker
+
+```bash
+docker build . --build-arg NEXT_PUBLIC_PLAUSIBLE_API_HOST=<host> --build-arg NEXT_PUBLIC_PLAUSIBLE_DOMAIN=<domain>
+```
 
 ## License
 
-This project is released under MIT License. See [LICENSE](/LICENSE) for more details. Feel free to use this code, but please don't use my name, images and texts.
+MIT License. See [LICENSE](/LICENSE) for details. Feel free to use this code, but please don't use my name, images and texts.
